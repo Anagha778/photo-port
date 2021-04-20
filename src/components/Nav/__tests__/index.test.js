@@ -28,7 +28,7 @@ describe('Nav component', () => {
         setCurrentCategory={mockSetCurrentCategory}
         currentCategory={mockCurrentCategory}
       />);
-      // assert value comparison
+      expect(asFragment()).toMatchSnapshot();
     });
 })
 
